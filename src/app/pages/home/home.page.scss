@@ -1,0 +1,43 @@
+#container {  
+  text-align: center;
+  margin-top: 50px;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.sign-in--header {
+  img {
+    max-height: 90px;
+  }
+}
+
+.facebook-btn {
+    button {
+      background-color: transparent;
+      color: grey;    
+    }
+}
+
+.sign-in--form {
+  margin-left: 20px;
+  margin-right: 20px;
+
+  ion-item {
+    --background: white;
+    color: black;  
+  }
+}
+
+
+ion-footer {
+  position: absolute;
+  bottom: 15px;
+
+  a {
+  text-decoration: initial;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+}

@@ -1,0 +1,49 @@
+<ion-content [fullscreen]="true">
+  <div id="container">
+
+    <section class="sign-in--header">
+      <img src="assets/app-logo.png" alt="app-logo" />
+      <h1>Sign In</h1>
+    </section>
+
+    <section class="sign-in--form">
+      <form>
+        <ion-item>
+          <ion-label position="stacked">E-mail</ion-label>
+          <ion-icon name="mail" slot="start" class="ion-align-self-center"></ion-icon>
+          <ion-input type="email" name="e-mail" id="e-mail" [(ngModel)]="credentials.email"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="stacked">Password</ion-label>
+          <ion-icon name="lock-closed" slot="start" class="ion-align-self-center"></ion-icon>
+          <ion-input type="password" name="password" id="password" [(ngModel)]="credentials.password"> </ion-input>
+        </ion-item>
+
+      </form>
+    </section>
+
+    <section class="sign-in--bottom-text">
+      <a href="">Forgot password ?</a>
+
+      <div>
+        <p>Sign In With</p>
+        <ion-button class="facebook-btn">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </ion-button>
+      </div>
+
+    </section>
+
+    <section class="sign-in--bottom-btns">
+
+      <ion-button>Sign Up</ion-button>
+      <ion-button (click)="signIn()">Sign In</ion-button>
+
+    </section>
+
+    <ion-footer class="ion-no-border">
+      <a href="">Terms and conditions</a>
+    </ion-footer>
+  </div>
+</ion-content>
