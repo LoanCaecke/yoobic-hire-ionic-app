@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Vehicle Details</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="container">
+    <h1>{{ vehicle.name }}</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde, dolorum suscipit? Omnis facilis odio doloribus nam et, ullam quasi enim fugiat corporis modi eaque ex aut, assumenda architecto blanditiis ratione!</p>
+
+    <app-vehicle-item [vehicle]="vehicle" [detailledMode]="true"></app-vehicle-item>
+  </div>
+</ion-content>
