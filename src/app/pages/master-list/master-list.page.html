@@ -9,6 +9,11 @@
 
 <ion-content [fullscreen]="true">
   <div id="container">
-    <h1 class="capitalize">List of all Star Wars Vehicules (todo)</h1>
+    <h1>List of all Star Wars Vehicles</h1>
+
+    <div *ngFor="let vehicle of vehicles" (click)="navigateTodetails(vehicle)">
+      <app-vehicle-item [vehicle]="vehicle" [detailledMode]="false"></app-vehicle-item>
+    </div>
   </div>
+
 </ion-content>
