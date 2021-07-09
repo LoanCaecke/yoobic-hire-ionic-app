@@ -1,0 +1,18 @@
+<ion-card>
+  <!-- If time add skeleton while the data is loading -->
+  <img [src]="vehicle.img_url" [ngClass]="{'vehicle-img-bigger': detailledMode}" />
+  <ion-card-header>
+    <ion-card-subtitle>{{ vehicle.name }}</ion-card-subtitle>
+    <ion-card-title>{{ vehicle.model }}</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    <p>Manufacturer : {{ vehicle.manufacturer }}</p>
+    <p>Created : {{ vehicle.created | date}}</p>
+    <div *ngIf="detailledMode">
+      <p>Max speed : {{ vehicle.max_atmosphering_speed }} </p>
+      <p>Class:  {{ vehicle.vehicle_class }} </p>
+      <p>Capacity:  {{ vehicle.cargo_capacity }} </p>  
+      <p>Some text:  Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora voluptas laudantium nobis cumque fugiat ipsa perspiciatis cum, est aliquam recusandae at libero corrupti maiores, consequatur error voluptates quibusdam dolor? Molestiae. </p>  
+    </div>
+  </ion-card-content>
+</ion-card>

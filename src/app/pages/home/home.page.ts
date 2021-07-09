@@ -31,7 +31,7 @@ export class HomePage {
 
 
       // redirect to master list
-      this.router.navigate(['/master-list']);
+      this.router.navigate(['/vehicles']);
     });
   }
 
